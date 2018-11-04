@@ -56,6 +56,7 @@ public class Player : MonoBehaviour {
     private bool EstaEnElSuelo() {
         bool enSuelo=false;
         Collider2D col = Physics2D.OverlapCircle(posPies.position, radioOverlap, floorLayer);
+        //Collider col3 = Physics.OverlapSphere(posPies.position, 1);
         if(col != null) {
             enSuelo = true;
         }
