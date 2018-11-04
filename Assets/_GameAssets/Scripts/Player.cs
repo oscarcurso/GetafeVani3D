@@ -7,7 +7,7 @@ public class Player : MonoBehaviour {
     [SerializeField] Text txtPuntuacion;
     [SerializeField] Image imVidas;
     [SerializeField] float speed = 10;
-    Rigidbody2D rb2D;
+    Rigidbody rb;
     [SerializeField] int vidas;
     [SerializeField] int puntos = 0;
     [SerializeField] float jumpForce = 50;
@@ -21,7 +21,7 @@ public class Player : MonoBehaviour {
 
 
     void Start() {
-        rb2D = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody>();
         txtPuntuacion.text = "Score: " + puntos.ToString();
     }
 
@@ -39,17 +39,17 @@ public class Player : MonoBehaviour {
 
         
         float xPos = Input.GetAxis("Horizontal");
-        float ySpeedActual = rb2D.velocity.y;
+        float ySpeedActual = rb.velocity.y;
 
         if (saltando) {
             saltando = false;
             if (EstaEnElSuelo()) {
-                rb2D.velocity = new Vector2(xPos * speed, jumpForce);
+                rb.velocity = new Vector3(xPos * speed, jumpForce);
             } else {
-                rb2D.velocity = new Vector2(xPos * speed, ySpeedActual);
+                rb.velocity = new Vector3(xPos * speed, ySpeedActual);
             }
         } else {
-            rb2D.velocity = new Vector2(xPos * speed, ySpeedActual);
+            rb.velocity = new Vector3(xPos * speed, ySpeedActual);
         }
     }
 
