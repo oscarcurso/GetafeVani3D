@@ -6,11 +6,11 @@ using UnityEngine.UI;
 public class Player : MonoBehaviour {
     [SerializeField] Text txtPuntuacion;
     [SerializeField] Image imVidas;
-    [SerializeField] float speed = 10;
+    [SerializeField] float speed = 6;
     Rigidbody rb;
     [SerializeField] int vidas;
     [SerializeField] int puntos = 0;
-    [SerializeField] float jumpForce = 50;
+    [SerializeField] float jumpForce = 7;
     [SerializeField] Transform posPies;
     [SerializeField] float radioOverlap = 0.1f;
     [SerializeField] LayerMask floorLayer;
@@ -44,12 +44,12 @@ public class Player : MonoBehaviour {
         if (saltando) {
             saltando = false;
             if (EstaEnElSuelo()) {
-                rb.velocity = new Vector3(xPos * speed, jumpForce);
+                rb.velocity = new Vector2(xPos * speed, jumpForce);
             } else {
-                rb.velocity = new Vector3(xPos * speed, ySpeedActual);
+                rb.velocity = new Vector2(xPos * speed, ySpeedActual);
             }
         } else {
-            rb.velocity = new Vector3(xPos * speed, ySpeedActual);
+            rb.velocity = new Vector2(xPos * speed, ySpeedActual);
         }
     }
 
@@ -87,7 +87,7 @@ public class Player : MonoBehaviour {
         txtPuntuacion.text = "Score: " + puntos.ToString();
     }
 
-    private void OnCollisionEnter2D(Collision2D collision) {
+    private void OnCollisionEnter(Collision collision) {
         if (collision.gameObject.CompareTag("Moneda")) {
 
             IncrementarPuntuacion(1);
