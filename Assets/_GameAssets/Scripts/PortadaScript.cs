@@ -14,6 +14,11 @@ public class PortadaScript : MonoBehaviour {
         SceneManager.LoadScene(1);
 
     }
+
+    public void ExitGame() {
+
+        Application.Quit();
+    }
     private void Update() {
        
         for (int i = 0; i < rt.Length; i++) {
