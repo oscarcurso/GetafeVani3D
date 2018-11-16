@@ -7,14 +7,14 @@ public class Player : MonoBehaviour {
     enum EstadoPlayer { Pausa, Parado, AndandoDer, AndandoIzq, Saltando, Sufriendo };
     EstadoPlayer estado = EstadoPlayer.Parado;
 
-  
+
     [SerializeField] Text txtPuntuacion;
     [SerializeField] Text txtSalud;
     [SerializeField] float speed = 10;
-    Rigidbody2D rb2D;
+    Rigidbody rb;
     [SerializeField] int vidas;
     [SerializeField] int puntos = 0;
-    [SerializeField] float jumpForce = 50;
+    [SerializeField] float jumpForce = 7;
     [SerializeField] Transform posPies;
     [SerializeField] float radioOverlap = 0.1f;
     [SerializeField] LayerMask floorLayer;
@@ -24,7 +24,7 @@ public class Player : MonoBehaviour {
     int vidasMaximas = 5;
     Animator playerAnimator;
     bool mirarFrente = true;
-   
+
 
     public int fuerzaimpactoX = 5;
     public int fuerzaImpactoY = 5;
@@ -36,17 +36,17 @@ public class Player : MonoBehaviour {
     }
 
     void Start() {
-        rb2D = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody>();
         playerAnimator = GetComponent<Animator>();
         txtPuntuacion.text = "Score: " + puntos.ToString();
         txtSalud.text = "Salud: " + salud.ToString();
 
-        
-       
+
+
     }
 
     private void Update() {
-       
+
 
         if (Input.GetKey(KeyCode.Space)) {
 
@@ -60,9 +60,9 @@ public class Player : MonoBehaviour {
     void CambiarOrientacion() {
 
         if (mirarFrente) {
-            transform.localScale = new Vector2(-1, 1);
+           // transform.localScale = new Vector3(-1, 1,0);
         } else {
-            transform.localScale = new Vector2(1, 1);
+           // transform.localScale = new Vector3(1, 1,0);
 
         }
         mirarFrente = !mirarFrente;
@@ -75,18 +75,20 @@ public class Player : MonoBehaviour {
 
 
         float xPos = Input.GetAxis("Horizontal");
-        float ySpeedActual = rb2D.velocity.y;
+        float ySpeedActual = rb.velocity.y;
+
+
 
         if (estado == EstadoPlayer.Sufriendo) {
             return;
         }
 
         if (Mathf.Abs(xPos) > 0.01f) {
-            playerAnimator.SetBool("Andando", true);
+            playerAnimator.SetBool("andando", true);
 
         } else {
-            playerAnimator.SetBool("Andando", false);
 
+            playerAnimator.SetBool("andando", false);
         }
 
 
@@ -95,19 +97,24 @@ public class Player : MonoBehaviour {
         if (estado == EstadoPlayer.Saltando) {
             estado = EstadoPlayer.Pausa;
             if (EstaEnElSuelo()) {
-                rb2D.velocity = new Vector2(xPos * speed, jumpForce);
+               rb.velocity = new Vector3(xPos * speed, jumpForce);
+                
             } else {
-                rb2D.velocity = new Vector2(xPos * speed, ySpeedActual);
+                rb.velocity = new Vector3(xPos * speed, ySpeedActual);
+               
             }
         } else if (xPos > 0.01f) {
             {
-                rb2D.velocity = new Vector2(xPos * speed, ySpeedActual);
+                rb.velocity = new Vector3(xPos * speed, ySpeedActual);
                 estado = EstadoPlayer.AndandoDer;
+               
+
             }
         } else if (xPos < -0.01f) {
 
-            rb2D.velocity = new Vector2(xPos * speed, ySpeedActual);
+            rb.velocity = new Vector3(xPos * speed, ySpeedActual);
             estado = EstadoPlayer.AndandoIzq;
+           
         }
 
 
@@ -178,12 +185,12 @@ public class Player : MonoBehaviour {
 
     }
     public void Recibirdanyo(int danyo) {
-       
+
 
         salud = salud - danyo;
 
         if (salud <= 0) {
-            
+
             vidas--;
             salud = saludMaxima;
             uiScript.RestarVida();
@@ -192,21 +199,21 @@ public class Player : MonoBehaviour {
 
         if (estado == EstadoPlayer.AndandoDer) {
             estado = EstadoPlayer.Sufriendo;
-            GetComponent<Rigidbody2D>().AddRelativeForce(
-            new Vector2(-fuerzaimpactoX, fuerzaImpactoY), ForceMode2D.Impulse);
+            GetComponent<Rigidbody>().AddRelativeForce(
+            new Vector3(-fuerzaimpactoX, fuerzaImpactoY,0));
         } else if (estado == EstadoPlayer.AndandoIzq) {
 
             estado = EstadoPlayer.Sufriendo;
-            GetComponent<Rigidbody2D>().AddRelativeForce(
-           new Vector2(fuerzaimpactoX, fuerzaImpactoY), ForceMode2D.Impulse);
+            GetComponent<Rigidbody>().AddRelativeForce(
+           new Vector3(fuerzaimpactoX, fuerzaImpactoY, 0));
         }
-        
+
     }
 
     public void RecibirSalud(int incrementoSalud) {
         salud = salud + incrementoSalud;
         salud = Mathf.Min(salud, saludMaxima); // igual que un if para que coja el valor menor
-       
+
     }
 
 
