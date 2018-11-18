@@ -2,19 +2,30 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class esqueletoScript : MonoBehaviour {
+public class EsqueletoScript : MonoBehaviour
+{
+    [SerializeField] ParticleSystem prefabExplosion;
+    Rigidbody rb;
+    public Rigidbody rbPlayer;
+    int velocidad = 4;
 
-
-    private Player player;
-    // Use this for initialization
-    private void Start() {
-        player = GetComponent<Player>();
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody>();
     }
 
-    private void OnCollisionEnter(Collision collision) {
-        if(collision.gameObject.name == "Player") {
 
-            player.Recibirdanyo(10);
-        }
+    private void Update()
+    {
+        transform.Translate(Vector2.left * velocidad * Time.deltaTime);
     }
+    public void Morir()
+    {
+        
+        ParticleSystem ps = Instantiate(prefabExplosion, transform.position, Quaternion.identity);
+        ps.Play();
+        Destroy(this.gameObject);
+
+    }
+   
 }

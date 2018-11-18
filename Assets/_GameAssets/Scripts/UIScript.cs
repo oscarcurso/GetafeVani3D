@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class UIScript : MonoBehaviour {
-    [SerializeField] Player player;
+    [SerializeField] PlayerScript player;
     [SerializeField] GameObject panelVidas;
     public GameObject prefabImagenVida;
     Image nuevaImage;

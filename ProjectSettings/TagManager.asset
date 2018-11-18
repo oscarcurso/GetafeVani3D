@@ -6,6 +6,7 @@ TagManager:
   tags:
   - CajaVida
   - Moneda
+  - esqueleto
   layers:
   - Default
   - TransparentFX

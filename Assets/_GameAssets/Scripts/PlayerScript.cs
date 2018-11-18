@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Player : MonoBehaviour {
+public class PlayerScript : MonoBehaviour
+{
     enum EstadoPlayer { Pausa, Parado, AndandoDer, AndandoIzq, Saltando, Sufriendo };
     EstadoPlayer estado = EstadoPlayer.Parado;
 
+    [SerializeField] EsqueletoScript Esqueleto;
 
     [SerializeField] Text txtPuntuacion;
     [SerializeField] Text txtSalud;
@@ -30,12 +32,14 @@ public class Player : MonoBehaviour {
     public int fuerzaImpactoY = 5;
     public UIScript uiScript;
 
-    private void Awake() {
+    private void Awake()
+    {
         vidas = vidasMaximas;
         salud = saludMaxima;
     }
 
-    void Start() {
+    void Start()
+    {
         rb = GetComponent<Rigidbody>();
         playerAnimator = GetComponent<Animator>();
         txtPuntuacion.text = "Score: " + puntos.ToString();
@@ -45,24 +49,31 @@ public class Player : MonoBehaviour {
 
     }
 
-    private void Update() {
+    private void Update()
+    {
 
 
-        if (Input.GetKey(KeyCode.Space)) {
+        if (Input.GetKey(KeyCode.Space))
+        {
 
             estado = EstadoPlayer.Saltando;
         }
-        if (estado == EstadoPlayer.Sufriendo && EstaEnElSuelo()) {
+        if (estado == EstadoPlayer.Sufriendo && EstaEnElSuelo())
+        {
             estado = EstadoPlayer.Pausa;
         }
     }
 
-    void CambiarOrientacion() {
+    void CambiarOrientacion()
+    {
 
-        if (mirarFrente) {
-           // transform.localScale = new Vector3(-1, 1,0);
-        } else {
-           // transform.localScale = new Vector3(1, 1,0);
+        if (mirarFrente)
+        {
+            // transform.localScale = new Vector3(-1, 1,0);
+        }
+        else
+        {
+            // transform.localScale = new Vector3(1, 1,0);
 
         }
         mirarFrente = !mirarFrente;
@@ -70,7 +81,8 @@ public class Player : MonoBehaviour {
 
 
 
-    void FixedUpdate() {
+    void FixedUpdate()
+    {
 
 
 
@@ -79,14 +91,18 @@ public class Player : MonoBehaviour {
 
 
 
-        if (estado == EstadoPlayer.Sufriendo) {
+        if (estado == EstadoPlayer.Sufriendo)
+        {
             return;
         }
 
-        if (Mathf.Abs(xPos) > 0.01f) {
+        if (Mathf.Abs(xPos) > 0.01f)
+        {
             playerAnimator.SetBool("andando", true);
 
-        } else {
+        }
+        else
+        {
 
             playerAnimator.SetBool("andando", false);
         }
@@ -94,45 +110,58 @@ public class Player : MonoBehaviour {
 
 
 
-        if (estado == EstadoPlayer.Saltando) {
+        if (estado == EstadoPlayer.Saltando)
+        {
             estado = EstadoPlayer.Pausa;
-            if (EstaEnElSuelo()) {
-               rb.velocity = new Vector3(xPos * speed, jumpForce);
-                
-            } else {
-                rb.velocity = new Vector3(xPos * speed, ySpeedActual);
-               
+            if (EstaEnElSuelo())
+            {
+                rb.velocity = new Vector3(xPos * speed, jumpForce);
+
             }
-        } else if (xPos > 0.01f) {
+            else
+            {
+                rb.velocity = new Vector3(xPos * speed, ySpeedActual);
+
+            }
+        }
+        else if (xPos > 0.01f)
+        {
             {
                 rb.velocity = new Vector3(xPos * speed, ySpeedActual);
                 estado = EstadoPlayer.AndandoDer;
-               
+
 
             }
-        } else if (xPos < -0.01f) {
+        }
+        else if (xPos < -0.01f)
+        {
 
             rb.velocity = new Vector3(xPos * speed, ySpeedActual);
             estado = EstadoPlayer.AndandoIzq;
-           
+
         }
 
 
 
 
 
-        if (mirarFrente && xPos < -0.01) {
+        if (mirarFrente && xPos < -0.01)
+        {
             CambiarOrientacion();
-        } else if (!mirarFrente && xPos > 0.01) {
+        }
+        else if (!mirarFrente && xPos > 0.01)
+        {
             CambiarOrientacion();
         }
 
     }
 
-    private bool EstaEnElSuelo() {
+    private bool EstaEnElSuelo()
+    {
         bool enSuelo = false;
         Collider2D col = Physics2D.OverlapCircle(posPies.position, radioOverlap, floorLayer);
-        if (col != null) {
+        if (col != null)
+        {
             enSuelo = true;
         }
         return enSuelo;
@@ -157,39 +186,60 @@ public class Player : MonoBehaviour {
         return enSuelo;
     }*/
 
-    public void IncrementarPuntuacion(int puntosAIncrementar) {
+    public void IncrementarPuntuacion(int puntosAIncrementar)
+    {
 
         puntos = puntos + puntosAIncrementar;
         txtPuntuacion.text = "Score: " + puntos.ToString();
     }
 
-    private void OnCollisionEnter2D(Collision2D collision) {
-        if (collision.gameObject.CompareTag("Moneda")) {
+    private void OnCollisionEnter(Collision collision)
+    {
+        GameObject objetivoImpacto = collision.gameObject;
+        if (objetivoImpacto.tag == "esqueleto")
+        {
+            objetivoImpacto.GetComponent<EsqueletoScript>().Morir();
 
-            IncrementarPuntuacion(1);
-            Destroy(collision.gameObject);
-        }
 
-        if (collision.gameObject.CompareTag("CajaVida")) {
+            if (collision.gameObject.CompareTag("Moneda"))
+            {
 
-            IncrementarVidas(1);
-            Destroy(collision.gameObject);
+                IncrementarPuntuacion(1);
+                Destroy(collision.gameObject);
+            }
+
+            if (collision.gameObject.CompareTag("CajaVida"))
+            {
+
+                IncrementarVidas(1);
+                Destroy(collision.gameObject);
+            }
+            if (collision.gameObject.CompareTag("esqueleto"))
+            {
+                Recibirdanyo(10);
+                rb.AddRelativeForce(
+                new Vector2(-fuerzaimpactoX, fuerzaImpactoY), ForceMode.Impulse);
+
+            }
         }
     }
 
-    public void IncrementarVidas(int vidasAIncrementar) {
+    public void IncrementarVidas(int vidasAIncrementar)
+    {
 
         vidas = vidas + vidasAIncrementar;
         //Renderer.Instantiate("Vidas", new Vector3(23, 34, 0), Quaternion rotation);
         print("Hasta aqui llego");
 
     }
-    public void Recibirdanyo(int danyo) {
+    public void Recibirdanyo(int danyo)
+    {
 
 
         salud = salud - danyo;
 
-        if (salud <= 0) {
+        if (salud <= 0)
+        {
 
             vidas--;
             salud = saludMaxima;
@@ -197,11 +247,14 @@ public class Player : MonoBehaviour {
 
         }
 
-        if (estado == EstadoPlayer.AndandoDer) {
+        if (estado == EstadoPlayer.AndandoDer)
+        {
             estado = EstadoPlayer.Sufriendo;
             GetComponent<Rigidbody>().AddRelativeForce(
-            new Vector3(-fuerzaimpactoX, fuerzaImpactoY,0));
-        } else if (estado == EstadoPlayer.AndandoIzq) {
+            new Vector3(-fuerzaimpactoX, fuerzaImpactoY, 0));
+        }
+        else if (estado == EstadoPlayer.AndandoIzq)
+        {
 
             estado = EstadoPlayer.Sufriendo;
             GetComponent<Rigidbody>().AddRelativeForce(
@@ -210,14 +263,16 @@ public class Player : MonoBehaviour {
 
     }
 
-    public void RecibirSalud(int incrementoSalud) {
+    public void RecibirSalud(int incrementoSalud)
+    {
         salud = salud + incrementoSalud;
         salud = Mathf.Min(salud, saludMaxima); // igual que un if para que coja el valor menor
 
     }
 
 
-    public int GetVidas() {
+    public int GetVidas()
+    {
         return this.vidas;
     }
 }

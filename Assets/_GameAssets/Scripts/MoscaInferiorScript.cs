@@ -6,7 +6,7 @@ public class MoscaInferiorScript : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision) {
         if (collision.gameObject.name == "Player") {
-            collision.gameObject.GetComponent<Player>().Recibirdanyo(20);
+            collision.gameObject.GetComponent<PlayerScript>().Recibirdanyo(20);
         }
     }
 }
