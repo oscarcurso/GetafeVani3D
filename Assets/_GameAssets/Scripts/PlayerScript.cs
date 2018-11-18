@@ -29,7 +29,7 @@ public class PlayerScript : MonoBehaviour
 
 
     public int fuerzaimpactoX = 5;
-    public int fuerzaImpactoY = 5;
+    public int fuerzaImpactoY = 2;
     public UIScript uiScript;
 
     private void Awake()
@@ -196,83 +196,82 @@ public class PlayerScript : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         GameObject objetivoImpacto = collision.gameObject;
-        if (objetivoImpacto.tag == "esqueleto")
+
+        // objetivoImpacto.GetComponent<EsqueletoScript>().Chocar();
+
+
+        if (collision.gameObject.CompareTag("Moneda"))
         {
-            objetivoImpacto.GetComponent<EsqueletoScript>().Morir();
 
+            IncrementarPuntuacion(1);
+            Destroy(collision.gameObject);
+        }
 
-            if (collision.gameObject.CompareTag("Moneda"))
-            {
+        if (collision.gameObject.CompareTag("CajaVida"))
+        {
 
-                IncrementarPuntuacion(1);
-                Destroy(collision.gameObject);
-            }
+            IncrementarVidas(1);
+            Destroy(collision.gameObject);
+        }
+        if (collision.gameObject.CompareTag("esqueleto"))
+        {
+            Recibirdanyo(10);
+            rb.AddRelativeForce(
+            new Vector2(-fuerzaimpactoX, fuerzaImpactoY), ForceMode.Impulse);
 
-            if (collision.gameObject.CompareTag("CajaVida"))
-            {
-
-                IncrementarVidas(1);
-                Destroy(collision.gameObject);
-            }
-            if (collision.gameObject.CompareTag("esqueleto"))
-            {
-                Recibirdanyo(10);
-                rb.AddRelativeForce(
-                new Vector2(-fuerzaimpactoX, fuerzaImpactoY), ForceMode.Impulse);
-
-            }
         }
     }
 
-    public void IncrementarVidas(int vidasAIncrementar)
+
+public void IncrementarVidas(int vidasAIncrementar)
+{
+
+    vidas = vidas + vidasAIncrementar;
+    //Renderer.Instantiate("Vidas", new Vector3(23, 34, 0), Quaternion rotation);
+    print("Hasta aqui llego");
+
+}
+public void Recibirdanyo(int danyo)
+{
+
+
+    salud = salud - danyo;
+
+    if (salud <= 0)
     {
 
-        vidas = vidas + vidasAIncrementar;
-        //Renderer.Instantiate("Vidas", new Vector3(23, 34, 0), Quaternion rotation);
-        print("Hasta aqui llego");
-
-    }
-    public void Recibirdanyo(int danyo)
-    {
-
-
-        salud = salud - danyo;
-
-        if (salud <= 0)
-        {
-
-            vidas--;
-            salud = saludMaxima;
-            uiScript.RestarVida();
-
-        }
-
-        if (estado == EstadoPlayer.AndandoDer)
-        {
-            estado = EstadoPlayer.Sufriendo;
-            GetComponent<Rigidbody>().AddRelativeForce(
-            new Vector3(-fuerzaimpactoX, fuerzaImpactoY, 0));
-        }
-        else if (estado == EstadoPlayer.AndandoIzq)
-        {
-
-            estado = EstadoPlayer.Sufriendo;
-            GetComponent<Rigidbody>().AddRelativeForce(
-           new Vector3(fuerzaimpactoX, fuerzaImpactoY, 0));
-        }
+        vidas--;
+        salud = saludMaxima;
+        uiScript.RestarVida();
 
     }
 
-    public void RecibirSalud(int incrementoSalud)
+    if (estado == EstadoPlayer.AndandoDer)
     {
-        salud = salud + incrementoSalud;
-        salud = Mathf.Min(salud, saludMaxima); // igual que un if para que coja el valor menor
+        estado = EstadoPlayer.Sufriendo;
+        GetComponent<Rigidbody>().AddRelativeForce(
+        new Vector3(-fuerzaimpactoX, fuerzaImpactoY, 0));
+    }
+    else if (estado == EstadoPlayer.AndandoIzq)
+    {
 
+        estado = EstadoPlayer.Sufriendo;
+        GetComponent<Rigidbody>().AddRelativeForce(
+       new Vector3(fuerzaimpactoX, fuerzaImpactoY, 0));
     }
 
+}
 
-    public int GetVidas()
-    {
-        return this.vidas;
-    }
+public void RecibirSalud(int incrementoSalud)
+{
+    salud = salud + incrementoSalud;
+    salud = Mathf.Min(salud, saludMaxima); // igual que un if para que coja el valor menor
+
+}
+
+
+public int GetVidas()
+{
+    return this.vidas;
+}
 }

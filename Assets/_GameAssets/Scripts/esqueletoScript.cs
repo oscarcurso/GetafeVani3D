@@ -5,13 +5,12 @@ using UnityEngine;
 public class EsqueletoScript : MonoBehaviour
 {
     [SerializeField] ParticleSystem prefabExplosion;
-    Rigidbody rb;
-    public Rigidbody rbPlayer;
-    int velocidad = 4;
+   
+    int velocidad = 2;
 
     private void Start()
     {
-        rb = GetComponent<Rigidbody>();
+       // rb = GetComponent<Rigidbody>();
     }
 
 
@@ -19,13 +18,12 @@ public class EsqueletoScript : MonoBehaviour
     {
         transform.Translate(Vector2.left * velocidad * Time.deltaTime);
     }
-    public void Morir()
+    private void OnCollisionEnter(Collision collision)
     {
-        
-        ParticleSystem ps = Instantiate(prefabExplosion, transform.position, Quaternion.identity);
-        ps.Play();
-        Destroy(this.gameObject);
-
+        if (collision.gameObject.name == "Player")
+        {
+            collision.gameObject.GetComponent<PlayerScript>().Recibirdanyo(20);
+        }
     }
-   
+
 }

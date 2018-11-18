@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class MoscaSuperiorScript : MonoBehaviour {
 
-    private void OnCollisionEnter2D(Collision2D collision) {
-        Destroy(transform.parent.gameObject);
+    private void OnCollisionEnter(Collision collision) {
+        if (collision.gameObject.name == "Player")
+        {
+            Destroy(transform.parent.gameObject);
+        }
     }
 }
