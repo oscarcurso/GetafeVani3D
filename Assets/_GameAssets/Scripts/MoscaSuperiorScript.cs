@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class MoscaSuperiorScript : MonoBehaviour {
 
-    private void OnCollisionEnter(Collision collision) {
-        if (collision.gameObject.name == "Player")
-        {
+   /* private void OnCollisionEnter(Collision collision) {
+        if (collision.gameObject.CompareTag("cabeza")) {
+
             Destroy(transform.parent.gameObject);
         }
-    }
+    }*/
 }

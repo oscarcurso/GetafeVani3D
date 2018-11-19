@@ -6,7 +6,7 @@ public class EsqueletoScript : MonoBehaviour
 {
     [SerializeField] ParticleSystem prefabExplosion;
    
-    int velocidad = 2;
+    int velocidad = 1;
 
     private void Start()
     {
@@ -18,12 +18,14 @@ public class EsqueletoScript : MonoBehaviour
     {
         transform.Translate(Vector2.left * velocidad * Time.deltaTime);
     }
-    private void OnCollisionEnter(Collision collision)
+    /*private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.name == "Player")
         {
             collision.gameObject.GetComponent<PlayerScript>().Recibirdanyo(20);
         }
-    }
+    }*/
+
+
 
 }
