@@ -13,7 +13,7 @@ public class MoscaSuperiorScript : MonoBehaviour {
     private void OnCollisionEnter2D(Collision2D collision) {
 
         Instantiate(ps, transform.position, Quaternion.identity);
-        Invoke("Morir", 0.5f);
+        Invoke("Morir", 0.2f);
         
         
     }
