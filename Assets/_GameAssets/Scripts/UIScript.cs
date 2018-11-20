@@ -4,35 +4,27 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class UIScript : MonoBehaviour {
-    [SerializeField] PlayerScript player;
-    [SerializeField] GameObject panelVidas;
-    public GameObject prefabImagenVida;
-    Image nuevaImage;
-    // Image[] imagenesVida= new Image[5];
-    public GameObject[] imagenesVida;
+    public Image prefabImagenVida;
+    public GameObject panelVidas;
+    public PlayerScript ms;
     private int numeroVidas;
-    
+   
+    Image[] imagenesVida;
+    void Start() {
+        numeroVidas = ms.GetVidas();
+        imagenesVida = new Image[numeroVidas];
 
-
-
-    void Start () {
-        numeroVidas = player.GetVidas();
-        imagenesVida = new GameObject[numeroVidas];
-
-
-        for(int i=0; i< imagenesVida.Length; i++) {
+        for (int i = 0; i < imagenesVida.Length; i++) {
             imagenesVida[i] = Instantiate(prefabImagenVida, panelVidas.transform);
-            
         }
-		
-	}
-
-    public void RestarVida() {
-        numeroVidas = player.GetVidas();
-        for (int i = numeroVidas; i > imagenesVida.Length; i++) {
-            Destroy(imagenesVida[i].gameObject);
-        }
-
     }
 
+    public void RestarVida() {
+        numeroVidas = ms.GetVidas();
+        for (int i = numeroVidas; i < imagenesVida.Length; i++) {
+            imagenesVida[i].color = new Color32(160, 160, 160, 128);
+        }
+
+
+    }
 }
