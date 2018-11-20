@@ -13,8 +13,8 @@ public class MoscaScript : MonoBehaviour {
 
     private void Start() {
         transform.position = limiteDerecho.position;
-        slider = GetComponentInChildren<Slider>();
-        QuitarVida(50);
+       
+       
     }
 
     // Update is called once per frame

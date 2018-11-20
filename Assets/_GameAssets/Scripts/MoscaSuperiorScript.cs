@@ -4,10 +4,22 @@ using UnityEngine;
 
 public class MoscaSuperiorScript : MonoBehaviour {
 
-   /* private void OnCollisionEnter(Collision collision) {
-        if (collision.gameObject.CompareTag("cabeza")) {
+   
+    public ParticleSystem ps;
 
-            Destroy(transform.parent.gameObject);
-        }
-    }*/
+    private void Start() {
+       
+    }
+    private void OnCollisionEnter2D(Collision2D collision) {
+
+        Instantiate(ps, transform.position, Quaternion.identity);
+        Invoke("Morir", 0.5f);
+        
+        
+    }
+
+    private void Morir() {
+
+        Destroy(transform.parent.gameObject);
+    }
 }
