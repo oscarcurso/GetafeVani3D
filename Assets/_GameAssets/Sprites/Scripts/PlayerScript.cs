@@ -110,6 +110,11 @@ public class PlayerScript : MonoBehaviour
 
             fantasma.Canyonazo();
         }
+        if (collision.gameObject.CompareTag("Agua")) {
+            print("colision agua");
+
+            RecibirDanyo(10);
+        }
     }
 
     private bool EstaEnElSuelo() {

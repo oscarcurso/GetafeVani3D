@@ -124,9 +124,9 @@ GameObject:
   - component: {fileID: 1947487}
   - component: {fileID: 1947486}
   - component: {fileID: 1947485}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: liquidWater (19)
-  m_TagString: Untagged
+  m_TagString: Agua
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -142,7 +142,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1597759053}
-  m_RootOrder: 37
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!253 &1947485
 BuoyancyEffector2D:
@@ -242,9 +242,9 @@ GameObject:
   - component: {fileID: 15394281}
   - component: {fileID: 15394280}
   - component: {fileID: 15394279}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: liquidWaterTop (18)
-  m_TagString: Untagged
+  m_TagString: Agua
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -260,7 +260,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1597759053}
-  m_RootOrder: 36
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!253 &15394279
 BuoyancyEffector2D:
@@ -522,9 +522,9 @@ GameObject:
   - component: {fileID: 32309941}
   - component: {fileID: 32309940}
   - component: {fileID: 32309939}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: liquidWaterTop (12)
-  m_TagString: Untagged
+  m_TagString: Agua
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -540,7 +540,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1597759053}
-  m_RootOrder: 24
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!253 &32309939
 BuoyancyEffector2D:
@@ -859,9 +859,9 @@ GameObject:
   - component: {fileID: 138324645}
   - component: {fileID: 138324644}
   - component: {fileID: 138324643}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: liquidWaterTop (17)
-  m_TagString: Untagged
+  m_TagString: Agua
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -877,7 +877,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1597759053}
-  m_RootOrder: 34
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!253 &138324643
 BuoyancyEffector2D:
@@ -977,9 +977,9 @@ GameObject:
   - component: {fileID: 167173233}
   - component: {fileID: 167173232}
   - component: {fileID: 167173231}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: liquidWater (18)
-  m_TagString: Untagged
+  m_TagString: Agua
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -995,7 +995,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1597759053}
-  m_RootOrder: 35
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!253 &167173231
 BuoyancyEffector2D:
@@ -1179,9 +1179,9 @@ GameObject:
   - component: {fileID: 223137925}
   - component: {fileID: 223137924}
   - component: {fileID: 223137923}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: liquidWater (16)
-  m_TagString: Untagged
+  m_TagString: Agua
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1197,7 +1197,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1597759053}
-  m_RootOrder: 31
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!253 &223137923
 BuoyancyEffector2D:
@@ -1297,9 +1297,9 @@ GameObject:
   - component: {fileID: 237269525}
   - component: {fileID: 237269524}
   - component: {fileID: 237269523}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: liquidWaterTop (8)
-  m_TagString: Untagged
+  m_TagString: Agua
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1315,7 +1315,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1597759053}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!253 &237269523
 BuoyancyEffector2D:
@@ -1877,9 +1877,9 @@ GameObject:
   - component: {fileID: 335694335}
   - component: {fileID: 335694334}
   - component: {fileID: 335694333}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: liquidWater (5)
-  m_TagString: Untagged
+  m_TagString: Agua
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1895,7 +1895,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1597759053}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!253 &335694333
 BuoyancyEffector2D:
@@ -2254,9 +2254,9 @@ GameObject:
   - component: {fileID: 361333577}
   - component: {fileID: 361333576}
   - component: {fileID: 361333575}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: liquidWater (4)
-  m_TagString: Untagged
+  m_TagString: Agua
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2272,7 +2272,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1597759053}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!253 &361333575
 BuoyancyEffector2D:
@@ -2544,9 +2544,9 @@ GameObject:
   - component: {fileID: 397373003}
   - component: {fileID: 397373002}
   - component: {fileID: 397373001}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: liquidWater (9)
-  m_TagString: Untagged
+  m_TagString: Agua
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2562,7 +2562,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1597759053}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!253 &397373001
 BuoyancyEffector2D:
@@ -2830,9 +2830,9 @@ GameObject:
   - component: {fileID: 425639276}
   - component: {fileID: 425639275}
   - component: {fileID: 425639274}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: liquidWater (12)
-  m_TagString: Untagged
+  m_TagString: Agua
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2848,7 +2848,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1597759053}
-  m_RootOrder: 23
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!253 &425639274
 BuoyancyEffector2D:
@@ -2985,9 +2985,9 @@ GameObject:
   - component: {fileID: 459992218}
   - component: {fileID: 459992217}
   - component: {fileID: 459992216}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: liquidWaterTop (3)
-  m_TagString: Untagged
+  m_TagString: Agua
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3003,7 +3003,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1597759053}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!253 &459992216
 BuoyancyEffector2D:
@@ -3361,7 +3361,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 16.24}
 --- !u!1 &499058301
 GameObject:
@@ -3374,9 +3374,9 @@ GameObject:
   - component: {fileID: 499058305}
   - component: {fileID: 499058304}
   - component: {fileID: 499058303}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: liquidWaterTop (4)
-  m_TagString: Untagged
+  m_TagString: Agua
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3392,7 +3392,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1597759053}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!253 &499058303
 BuoyancyEffector2D:
@@ -3644,9 +3644,9 @@ GameObject:
   - component: {fileID: 562193749}
   - component: {fileID: 562193748}
   - component: {fileID: 562193747}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: liquidWaterTop (2)
-  m_TagString: Untagged
+  m_TagString: Agua
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3662,7 +3662,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1597759053}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!253 &562193747
 BuoyancyEffector2D:
@@ -36992,9 +36992,9 @@ GameObject:
   - component: {fileID: 582448307}
   - component: {fileID: 582448306}
   - component: {fileID: 582448305}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: liquidWaterTop (10)
-  m_TagString: Untagged
+  m_TagString: Agua
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37010,7 +37010,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1597759053}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!253 &582448305
 BuoyancyEffector2D:
@@ -37305,6 +37305,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 439293026}
   m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &696857819
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 696857820}
+  m_Layer: 0
+  m_Name: PuntoDrcho
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &696857820
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 696857819}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 99.66, y: -4, z: 10.15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &698542349
 GameObject:
@@ -37645,7 +37673,7 @@ GameObject:
   - component: {fileID: 797444327}
   m_Layer: 0
   m_Name: liquidWaterTop
-  m_TagString: Untagged
+  m_TagString: Agua
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37701,11 +37729,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 797444324}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.564087, y: -0.77999973, z: -0.13999939}
+  m_LocalPosition: {x: 82.39, y: -5.54, z: 10.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1597759053}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!253 &797444327
 BuoyancyEffector2D:
@@ -37802,9 +37830,9 @@ GameObject:
   - component: {fileID: 834016997}
   - component: {fileID: 834016996}
   - component: {fileID: 834016995}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: liquidWater (8)
-  m_TagString: Untagged
+  m_TagString: Agua
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37820,7 +37848,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1597759053}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!253 &834016995
 BuoyancyEffector2D:
@@ -37920,9 +37948,9 @@ GameObject:
   - component: {fileID: 853960456}
   - component: {fileID: 853960455}
   - component: {fileID: 853960454}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: liquidWaterTop (16)
-  m_TagString: Untagged
+  m_TagString: Agua
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37938,7 +37966,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1597759053}
-  m_RootOrder: 32
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!253 &853960454
 BuoyancyEffector2D:
@@ -38038,9 +38066,9 @@ GameObject:
   - component: {fileID: 882329879}
   - component: {fileID: 882329878}
   - component: {fileID: 882329877}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: liquidWaterTop (7)
-  m_TagString: Untagged
+  m_TagString: Agua
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38056,7 +38084,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1597759053}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!253 &882329877
 BuoyancyEffector2D:
@@ -38244,9 +38272,9 @@ GameObject:
   - component: {fileID: 921967957}
   - component: {fileID: 921967956}
   - component: {fileID: 921967955}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: liquidWater (15)
-  m_TagString: Untagged
+  m_TagString: Agua
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38262,7 +38290,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1597759053}
-  m_RootOrder: 29
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!253 &921967955
 BuoyancyEffector2D:
@@ -38508,9 +38536,9 @@ GameObject:
   - component: {fileID: 933987024}
   - component: {fileID: 933987023}
   - component: {fileID: 933987022}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: liquidWaterTop (14)
-  m_TagString: Untagged
+  m_TagString: Agua
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38526,7 +38554,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1597759053}
-  m_RootOrder: 28
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!253 &933987022
 BuoyancyEffector2D:
@@ -38871,7 +38899,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 999917436}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 80.15294, y: -2.7745605, z: 0.14999962}
+  m_LocalPosition: {x: 80.15294, y: -2.7745605, z: 0.020000458}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1795481429}
@@ -39029,8 +39057,9 @@ GameObject:
   - component: {fileID: 1038897572}
   - component: {fileID: 1038897571}
   - component: {fileID: 1038897573}
+  - component: {fileID: 1038897574}
   m_Layer: 0
-  m_Name: hearth
+  m_Name: corazonFinal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39091,7 +39120,7 @@ Transform:
   m_LocalScale: {x: 50, y: 50, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1038897573
 BoxCollider2D:
@@ -39118,6 +39147,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.01920288, y: 0.03924217}
   m_EdgeRadius: 0
+--- !u!114 &1038897574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1038897570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14f0e113f96f824c9e0d7685c23b928, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1039000697
 Prefab:
   m_ObjectHideFlags: 0
@@ -39326,9 +39366,9 @@ GameObject:
   - component: {fileID: 1124997332}
   - component: {fileID: 1124997331}
   - component: {fileID: 1124997330}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: liquidWater
-  m_TagString: Untagged
+  m_TagString: Agua
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39344,7 +39384,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1597759053}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!253 &1124997330
 BuoyancyEffector2D:
@@ -39450,7 +39490,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4089262640847752, guid: 9f70e9bc82fc1e44893267037306d58f, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 10.15
+      value: 10.02
       objectReference: {fileID: 0}
     - target: {fileID: 4089262640847752, guid: 9f70e9bc82fc1e44893267037306d58f, type: 2}
       propertyPath: m_LocalRotation.x
@@ -40036,9 +40076,9 @@ GameObject:
   - component: {fileID: 1269178340}
   - component: {fileID: 1269178339}
   - component: {fileID: 1269178338}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: liquidWater (11)
-  m_TagString: Untagged
+  m_TagString: Agua
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40054,7 +40094,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1597759053}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!253 &1269178338
 BuoyancyEffector2D:
@@ -40335,9 +40375,9 @@ GameObject:
   - component: {fileID: 1324234864}
   - component: {fileID: 1324234863}
   - component: {fileID: 1324234862}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: liquidWater (10)
-  m_TagString: Untagged
+  m_TagString: Agua
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40353,7 +40393,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1597759053}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!253 &1324234862
 BuoyancyEffector2D:
@@ -41006,9 +41046,9 @@ GameObject:
   - component: {fileID: 1478939796}
   - component: {fileID: 1478939795}
   - component: {fileID: 1478939794}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: liquidWater (7)
-  m_TagString: Untagged
+  m_TagString: Agua
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41024,7 +41064,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1597759053}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!253 &1478939794
 BuoyancyEffector2D:
@@ -41197,9 +41237,9 @@ GameObject:
   - component: {fileID: 1544062052}
   - component: {fileID: 1544062051}
   - component: {fileID: 1544062050}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: liquidWater (14)
-  m_TagString: Untagged
+  m_TagString: Agua
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41215,7 +41255,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1597759053}
-  m_RootOrder: 27
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!253 &1544062050
 BuoyancyEffector2D:
@@ -41450,6 +41490,34 @@ Transform:
   m_Father: {fileID: 439293026}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1589981673
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1589981674}
+  m_Layer: 0
+  m_Name: PuntoIzqdo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1589981674
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1589981673}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 82.84, y: -4, z: 10.15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1597759052
 GameObject:
   m_ObjectHideFlags: 0
@@ -41458,9 +41526,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1597759053}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Agua
-  m_TagString: Untagged
+  m_TagString: Agua
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41475,7 +41543,6 @@ Transform:
   m_LocalPosition: {x: 69.82591, y: -4.76, z: 10.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 797444326}
   - {fileID: 1124997329}
   - {fileID: 2036938810}
   - {fileID: 1841308588}
@@ -41514,7 +41581,7 @@ Transform:
   - {fileID: 15394278}
   - {fileID: 1947484}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1599784134
 GameObject:
@@ -41642,9 +41709,9 @@ GameObject:
   - component: {fileID: 1710515094}
   - component: {fileID: 1710515093}
   - component: {fileID: 1710515092}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: liquidWater (17)
-  m_TagString: Untagged
+  m_TagString: Agua
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41660,7 +41727,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1597759053}
-  m_RootOrder: 33
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!253 &1710515092
 BuoyancyEffector2D:
@@ -41936,9 +42003,9 @@ GameObject:
   - component: {fileID: 1790660812}
   - component: {fileID: 1790660811}
   - component: {fileID: 1790660810}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: liquidWater (13)
-  m_TagString: Untagged
+  m_TagString: Agua
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41954,7 +42021,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1597759053}
-  m_RootOrder: 25
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!253 &1790660810
 BuoyancyEffector2D:
@@ -42169,9 +42236,9 @@ GameObject:
   - component: {fileID: 1812804925}
   - component: {fileID: 1812804924}
   - component: {fileID: 1812804923}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: liquidWaterTop (9)
-  m_TagString: Untagged
+  m_TagString: Agua
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42187,7 +42254,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1597759053}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!253 &1812804923
 BuoyancyEffector2D:
@@ -42360,9 +42427,9 @@ GameObject:
   - component: {fileID: 1841308591}
   - component: {fileID: 1841308590}
   - component: {fileID: 1841308589}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: liquidWater (1)
-  m_TagString: Untagged
+  m_TagString: Agua
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42378,7 +42445,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1597759053}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!253 &1841308589
 BuoyancyEffector2D:
@@ -42590,9 +42657,9 @@ GameObject:
   - component: {fileID: 1893341231}
   - component: {fileID: 1893341230}
   - component: {fileID: 1893341229}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: liquidWaterTop (15)
-  m_TagString: Untagged
+  m_TagString: Agua
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42608,7 +42675,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1597759053}
-  m_RootOrder: 30
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!253 &1893341229
 BuoyancyEffector2D:
@@ -42817,9 +42884,9 @@ GameObject:
   - component: {fileID: 1958711339}
   - component: {fileID: 1958711338}
   - component: {fileID: 1958711337}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: liquidWater (6)
-  m_TagString: Untagged
+  m_TagString: Agua
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42835,7 +42902,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1597759053}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!253 &1958711337
 BuoyancyEffector2D:
@@ -43034,9 +43101,9 @@ GameObject:
   - component: {fileID: 1967096195}
   - component: {fileID: 1967096194}
   - component: {fileID: 1967096193}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: liquidWaterTop (6)
-  m_TagString: Untagged
+  m_TagString: Agua
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43052,7 +43119,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1597759053}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!253 &1967096193
 BuoyancyEffector2D:
@@ -43289,9 +43356,9 @@ GameObject:
   - component: {fileID: 2026394282}
   - component: {fileID: 2026394281}
   - component: {fileID: 2026394280}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: liquidWater (2)
-  m_TagString: Untagged
+  m_TagString: Agua
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43307,7 +43374,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1597759053}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!253 &2026394280
 BuoyancyEffector2D:
@@ -43407,9 +43474,9 @@ GameObject:
   - component: {fileID: 2036938813}
   - component: {fileID: 2036938812}
   - component: {fileID: 2036938811}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: liquidWaterTop (1)
-  m_TagString: Untagged
+  m_TagString: Agua
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43425,7 +43492,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1597759053}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!253 &2036938811
 BuoyancyEffector2D:
@@ -43563,9 +43630,9 @@ GameObject:
   - component: {fileID: 2054062198}
   - component: {fileID: 2054062197}
   - component: {fileID: 2054062196}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: liquidWaterTop (5)
-  m_TagString: Untagged
+  m_TagString: Agua
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43581,7 +43648,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1597759053}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!253 &2054062196
 BuoyancyEffector2D:
@@ -43681,9 +43748,9 @@ GameObject:
   - component: {fileID: 2066431329}
   - component: {fileID: 2066431328}
   - component: {fileID: 2066431327}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: liquidWaterTop (11)
-  m_TagString: Untagged
+  m_TagString: Agua
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43699,7 +43766,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1597759053}
-  m_RootOrder: 22
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!253 &2066431327
 BuoyancyEffector2D:
@@ -43799,9 +43866,9 @@ GameObject:
   - component: {fileID: 2083767438}
   - component: {fileID: 2083767437}
   - component: {fileID: 2083767436}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: liquidWaterTop (13)
-  m_TagString: Untagged
+  m_TagString: Agua
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43817,7 +43884,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1597759053}
-  m_RootOrder: 26
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!253 &2083767436
 BuoyancyEffector2D:
@@ -43906,6 +43973,58 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1001 &2091182017
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4486557799664184, guid: 4deb3441f8be71945a89e8927a173cc9, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 83.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 4486557799664184, guid: 4deb3441f8be71945a89e8927a173cc9, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4486557799664184, guid: 4deb3441f8be71945a89e8927a173cc9, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 10.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4486557799664184, guid: 4deb3441f8be71945a89e8927a173cc9, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4486557799664184, guid: 4deb3441f8be71945a89e8927a173cc9, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4486557799664184, guid: 4deb3441f8be71945a89e8927a173cc9, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4486557799664184, guid: 4deb3441f8be71945a89e8927a173cc9, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4486557799664184, guid: 4deb3441f8be71945a89e8927a173cc9, type: 2}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 114624024333232188, guid: 4deb3441f8be71945a89e8927a173cc9,
+        type: 2}
+      propertyPath: limiteDerecho
+      value: 
+      objectReference: {fileID: 696857820}
+    - target: {fileID: 114624024333232188, guid: 4deb3441f8be71945a89e8927a173cc9,
+        type: 2}
+      propertyPath: limiteIzquierdo
+      value: 
+      objectReference: {fileID: 1589981674}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 4deb3441f8be71945a89e8927a173cc9, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &2137571823
 GameObject:
   m_ObjectHideFlags: 0

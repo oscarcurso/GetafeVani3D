@@ -9,6 +9,7 @@ TagManager:
   - esqueleto
   - cabeza
   - SueloResbaloso
+  - Agua
   layers:
   - Default
   - TransparentFX
