@@ -8,6 +8,7 @@ TagManager:
   - Moneda
   - esqueleto
   - cabeza
+  - SueloResbaloso
   layers:
   - Default
   - TransparentFX
