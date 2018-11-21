@@ -106,10 +106,7 @@ public class PlayerScript : MonoBehaviour
             IncrementarPuntuacion(1);
             Destroy(collision.gameObject);
         }
-        if (collision.gameObject.CompareTag("SueloResbaloso")) {
-
-            fantasma.Canyonazo();
-        }
+      
         if (collision.gameObject.CompareTag("Agua")) {
             print("colision agua");
 

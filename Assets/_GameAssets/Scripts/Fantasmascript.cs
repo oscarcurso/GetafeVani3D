@@ -11,7 +11,7 @@ public class Fantasmascript : MonoBehaviour {
 
 
     private void Start() {
-      
+        InvokeRepeating("Disparar", 1.0f, 2.0f);
     }
 
     public void Disparar() {
@@ -20,11 +20,14 @@ public class Fantasmascript : MonoBehaviour {
             prefabBala,
             puntoGeneracion.transform.position,
             puntoGeneracion.transform.rotation);
-        nuevaBala.GetComponent<Rigidbody2D>().AddRelativeForce(Vector3.left * Time.deltaTime * potenciaDisparo);
+        nuevaBala.GetComponent<Rigidbody2D>().AddRelativeForce(Vector3.left * potenciaDisparo);
     }
 
     public void Canyonazo() {
 
         Invoke("Disparar", 2);
+    }
+    private void OnCollisionEnter2D(Collision2D collision) {
+        Destroy(this);
     }
 }
