@@ -13,12 +13,13 @@ public class MoscaSuperiorScript : MonoBehaviour {
     private void OnCollisionEnter2D(Collision2D collision) {
 
         Instantiate(ps, transform.position, Quaternion.identity);
-        Invoke("Morir", 0.2f);
+        Invoke("Morir", 0.1f);
         
         
     }
 
     private void Morir() {
+       
 
         Destroy(transform.parent.gameObject);
     }
