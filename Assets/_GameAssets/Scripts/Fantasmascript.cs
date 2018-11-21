@@ -20,7 +20,7 @@ public class Fantasmascript : MonoBehaviour {
             prefabBala,
             puntoGeneracion.transform.position,
             puntoGeneracion.transform.rotation);
-        nuevaBala.GetComponent<Rigidbody2D>().AddRelativeForce(Vector3.left * potenciaDisparo);
+        nuevaBala.GetComponent<Rigidbody2D>().AddRelativeForce(Vector3.left * Time.deltaTime * potenciaDisparo);
     }
 
     public void Canyonazo() {
