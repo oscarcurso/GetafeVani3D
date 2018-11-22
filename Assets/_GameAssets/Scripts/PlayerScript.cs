@@ -8,7 +8,7 @@ public class PlayerScript : MonoBehaviour
     enum EstadoPlayer { Pausa, AndandoDer, AndandoIzq, Saltando, Sufriendo };
     EstadoPlayer estado = EstadoPlayer.Pausa;
 
-    [SerializeField] Fantasmascript fantasma;
+   
     [SerializeField] LayerMask floorLayer;
     [SerializeField] Transform posPies;
     [SerializeField] Text txtPuntuacion;
@@ -38,7 +38,8 @@ public class PlayerScript : MonoBehaviour
     }
 
     private void Start() {
-        fantasma = GetComponent<Fantasmascript>();
+        
+      
         rb2D = GetComponent<Rigidbody2D>();
         playerAnimator = GetComponent<Animator>();
 
@@ -112,6 +113,11 @@ public class PlayerScript : MonoBehaviour
 
             RecibirDanyo(10);
         }
+        if (collision.gameObject.CompareTag("bala")) {
+            collision.gameObject.GetComponent<PlayerScript>().RecibirDanyo(20);
+            print("recibedanyo");
+        }
+       
     }
 
     private bool EstaEnElSuelo() {

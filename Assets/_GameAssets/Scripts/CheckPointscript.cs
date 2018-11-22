@@ -5,7 +5,7 @@ using UnityEngine;
 public class CheckPointscript : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision) {
-        if(collision.gameObject.name == "Player") {
+        if (collision.gameObject.name == "Player") {
 
             GameController.StorePosition(collision.gameObject.transform.position);
 
@@ -13,4 +13,5 @@ public class CheckPointscript : MonoBehaviour {
             Destroy(this.gameObject);
         }
     }
+  
 }

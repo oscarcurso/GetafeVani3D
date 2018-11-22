@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class UIScript : MonoBehaviour {
+   
     public Image prefabImagenVida;
     public GameObject panelVidas;
     public PlayerScript ms;
@@ -11,6 +12,8 @@ public class UIScript : MonoBehaviour {
    
     Image[] imagenesVida;
     void Start() {
+       
+        
         numeroVidas = ms.GetVidas();
         imagenesVida = new Image[numeroVidas];
 
@@ -26,5 +29,10 @@ public class UIScript : MonoBehaviour {
         }
 
 
+    }
+    public void BotonRecheck() {
+        
+
+        PlayerPrefs.DeleteAll();
     }
 }

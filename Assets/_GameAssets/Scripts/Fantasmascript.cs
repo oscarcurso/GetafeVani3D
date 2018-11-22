@@ -5,13 +5,15 @@ using UnityEngine;
 public class Fantasmascript : MonoBehaviour {
 
     bool activa;
+    [SerializeField] ParticleSystem ps;
     [SerializeField] GameObject puntoGeneracion;
     [SerializeField] GameObject prefabBala;
     [SerializeField] int potenciaDisparo = 100;
 
 
     private void Start() {
-        InvokeRepeating("Disparar", 1.0f, 2.0f);
+        
+        InvokeRepeating("Disparar", 1f, 5f);
     }
 
     public void Disparar() {
@@ -28,6 +30,16 @@ public class Fantasmascript : MonoBehaviour {
         Invoke("Disparar", 2);
     }
     private void OnCollisionEnter2D(Collision2D collision) {
-        Destroy(this);
+
+        Instantiate(ps, transform.position, Quaternion.identity);
+        Invoke("Morir", 0.1f);
+
+
+    }
+
+    private void Morir() {
+
+
+        Destroy(transform.gameObject);
     }
 }

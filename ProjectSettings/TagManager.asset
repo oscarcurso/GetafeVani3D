@@ -10,6 +10,7 @@ TagManager:
   - cabeza
   - SueloResbaloso
   - Agua
+  - bala
   layers:
   - Default
   - TransparentFX

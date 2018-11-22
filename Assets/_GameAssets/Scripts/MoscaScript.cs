@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class MoscaScript : MonoBehaviour {
 
-    Slider slider;
+   
     public Transform limiteDerecho;
     public Transform limiteIzquierdo;
 
@@ -45,11 +45,7 @@ public class MoscaScript : MonoBehaviour {
     }
 
 
-    private void QuitarVida(int vida) {
-
-        slider.value = slider.value - vida;
-    }
-
+   
     
    
 

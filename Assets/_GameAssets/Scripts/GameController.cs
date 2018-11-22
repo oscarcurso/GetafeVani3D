@@ -30,6 +30,10 @@ public class GameController : MonoBehaviour {
 
     }
 
+    public void Delete() {
+        PlayerPrefs.DeleteAll();
+    }
+
 
 
 }
